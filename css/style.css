@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* umum */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* awal header */
+header {
+    z-index: 999;
+    position: fixed;
+    background: #503232d2;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+header img {
+    height: 55px;
+    line-height: 60px;
+    margin-left: -80px;
+}
+
+header p {
+    margin-top: -77px;
+}
+
+header .logo {
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: white;
+    background-color: #83303098;
+}
+
+/* akhir header */
+
+section {
+    padding: 100px 200px;
+}
+
+/* home */
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+/* konten kiri */
+.home .content1 {
+    width: 500px;
+}
+
+.home .content1 h2 {
+    color: black;
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: 50%;
+}
+
+.animasi-text {
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    width: 700px;
+    margin-left: 50%;
+}
+
+.animasi-text h3 {
+    color: #833030;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.animasi-text h3:nth-child(1) {
+    animation: text-move 15s infinite;
+}
+
+@keyframes text-move {
+    0% {
+        margin-top: 0;
+    }
+
+    25% {
+        margin-top: -70px;
+    }
+
+    50% {
+        margin-top: -140px;
+    }
+
+    75% {
+        margin-top: -70px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+/* button */
+.btn {
+    background-color: #83303098;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+
+}
+
+.btn:hover {
+    background: #833030;
+    color: white;
+}
+
+/* konten kanan */
+.home .content2 {
+    width: 300px;
+}
+
+/* foto di halaman home */
+.img {
+    /* border-radius: 50%; */
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-left: -200%;
+}
+
+/* biodata */
+.biodata {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title {
+    position: relative;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -3%;
+}
+
+.biodata .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -5%;
+}
+
+.biodata .content .col-left {
+    position: relative;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.biodata .content .col-right {
+    position: relative;
+    width: 65%;
+    margin-top: 40px;
+}
+
+/* foto profile */
+.biodata .content .col-left .img-card {
+    position: relative;
+    width: 100%;
+    min-height: 275px;
+}
+
+.biodata .content .col-left .img-card img {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+table {
+    line-height: 40px;
+    width: 100%;
+}
+
+.biodata .content .col-left2 {
+    position: absolute;
+    margin-left: -58%;
+    margin-top: 5%;
+    line-height: 25px;
+    width: 198%;
+}
+
+.biodata .content .col-pa {
+    margin-left: -58%;
+    margin-top: 5%;
+}
+
+/* skill */
+.skill {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.skill .contents {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -8%;
+}
+
+.skill .contents .hard {
+    position: relative;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.skill .contents .headhs {
+    position: relative;
+    width: 70%;
+    font-size: 26px;
+}
+
+.skill .contents .hard1 {
+    position: relative;
+    width: 100%;
+    line-height: 35px;
+    color: brown;
+}
+
+.skill .contents .soft {
+    position: relative;
+    width: 100%;
+    margin-top: 2%;
+    margin-left: -27%;
+}
+
+.skill .contents .headss {
+    position: relative;
+    width: 70%;
+    font-size: 26px;
+}
+
+.skill .contents .soft1 {
+    position: relative;
+    width: 100%;
+    line-height: 35px;
+    color: brown;
+}
+
+/* diagram */
+.cohs2 {
+    min-height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cohs3 {
+    min-height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* kontak */
+.contact {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact .content .icon {
+    width: 100px;
+    margin: 15px;
+}
+
+.contact .content .img-icon {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.contact .content .img-icon img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.contact .content .img-icon img:hover {
+    transform: scale(1.2);
+}
+
+/* footer */
+.footer {
+    margin-top: -3%;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.footer a {
+    color: brown;
+    font-weight: 600;
+    text-decoration: none;
+}
